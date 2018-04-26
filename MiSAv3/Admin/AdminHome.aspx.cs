@@ -13,7 +13,7 @@ namespace MiSAv3.Admin
 {
     public partial class AdminHome : System.Web.UI.Page
     {
-        SqlConnection sqlCon = new SqlConnection(ConfigurationManager.ConnectionStrings["misa"].ConnectionString);
+        SqlConnection sqlCon = new SqlConnection(ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString);
         protected void Page_Load(object sender, EventArgs e)
         {
             FillGridView();

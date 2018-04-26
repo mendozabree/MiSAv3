@@ -32,7 +32,7 @@ namespace MiSAv3.Client
         private void dbInsertEvent(DateTime start, DateTime end, string name)
         {
             
-            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["daypilot"].ConnectionString))
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString))
             {
                 con.Open();
                 SqlCommand cmd = new SqlCommand("INSERT INTO [event] (eventstart, eventend, name) VALUES(@start, @end, @name)", con);

@@ -14,7 +14,7 @@ namespace MiSAv3.Client
 {
     public partial class MyLabs : System.Web.UI.Page
     {
-        SqlConnection sqlCon = new SqlConnection(ConfigurationManager.ConnectionStrings["misa"].ConnectionString);
+        SqlConnection sqlCon = new SqlConnection(ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString);
         protected void Page_Load(object sender, EventArgs e)
         {
             FillTable();
