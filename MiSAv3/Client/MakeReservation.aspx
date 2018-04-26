@@ -1,4 +1,4 @@
-﻿<%@ Page Title="My Reservations" MasterPageFile="~/Site.Master" Language="C#" AutoEventWireup="true" CodeBehind="ClientReservations.aspx.cs" Inherits="MiSAv3.Client.ClientReservations" %>
+﻿<%@ Page Title="My Reservations" MasterPageFile="~/Site.Master" Language="C#" AutoEventWireup="true" CodeBehind="MakeReservation.aspx.cs" Inherits="MiSAv3.Client.ClientReservations" %>
 
 <asp:Content ContentPlaceHolderID="MainContent" runat="server">
     

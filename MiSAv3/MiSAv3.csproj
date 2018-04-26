@@ -186,7 +186,7 @@
     <Content Include="App_Data\misa_log.ldf">
       <DependentUpon>misa.mdf</DependentUpon>
     </Content>
-    <Content Include="Client\ClientReservations.aspx" />
+    <Content Include="Client\MakeReservation.aspx" />
     <Content Include="Client\MyLabs.aspx" />
     <Content Include="Client\MyReservation.aspx" />
     <Content Include="Client\New.aspx" />
@@ -202,6 +202,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
     <Content Include="Admin\Admin.Master" />
+    <Content Include="Admin\Web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Images\1.png" />
     <Content Include="Images\2.png" />
@@ -471,12 +472,12 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="Client\ClientReservations.aspx.cs">
-      <DependentUpon>ClientReservations.aspx</DependentUpon>
+    <Compile Include="Client\MakeReservation.aspx.cs">
+      <DependentUpon>MakeReservation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Client\ClientReservations.aspx.designer.cs">
-      <DependentUpon>ClientReservations.aspx</DependentUpon>
+    <Compile Include="Client\MakeReservation.aspx.designer.cs">
+      <DependentUpon>MakeReservation.aspx</DependentUpon>
     </Compile>
     <Compile Include="Client\Modal.cs" />
     <Compile Include="Client\MyLabs.aspx.cs">
@@ -519,6 +520,7 @@
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Roles\RoleAction.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
