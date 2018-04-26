@@ -82,7 +82,7 @@ namespace MiSAv3.Client
 
         private DataTable GetData(DateTime start, DateTime end)
         {
-            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM [event] WHERE NOT (([eventend] <= @start) OR ([eventstart] >= @end))", ConfigurationManager.ConnectionStrings["daypilot"].ConnectionString);
+            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM [event] WHERE NOT (([eventend] <= @start) OR ([eventstart] >= @end))", ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString);
             da.SelectCommand.Parameters.AddWithValue("start", start);
             da.SelectCommand.Parameters.AddWithValue("end", end);
 
