@@ -165,18 +165,15 @@
     <Content Include="Account\Forgot.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\ManagePassword.aspx" />
+    <Content Include="Account\OpenAuthProviders.ascx" />
     <Content Include="Account\Register.aspx" />
     <Content Include="Account\ResetPassword.aspx" />
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Admin\AdminHome.aspx" />
     <Content Include="Admin\SetUpExperiment.aspx" />
-    <Content Include="App_Data\daypilot.mdf" />
-    <Content Include="App_Data\daypilot_log.ldf">
-      <DependentUpon>daypilot.mdf</DependentUpon>
-    </Content>
-    <Content Include="App_Data\misa.mdf" />
-    <Content Include="App_Data\misa_log.ldf">
-      <DependentUpon>misa.mdf</DependentUpon>
+    <Content Include="App_Data\aspnet-MiSAv3-old.mdf" />
+    <Content Include="App_Data\aspnet-MiSAv3-old_log.ldf">
+      <DependentUpon>aspnet-MiSAv3-old.mdf</DependentUpon>
     </Content>
     <Content Include="Client\MakeReservation.aspx" />
     <Content Include="Client\MyLabs.aspx" />
@@ -353,6 +350,13 @@
     </Compile>
     <Compile Include="Account\ManagePassword.aspx.designer.cs">
       <DependentUpon>ManagePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.cs">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.designer.cs">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
     </Compile>
     <Compile Include="Account\Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>

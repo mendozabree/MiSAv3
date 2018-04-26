@@ -9,10 +9,8 @@
                 <div class="col-sm-12">
                     <asp:GridView ID="gv" runat="server" CssClass="table table-striped table-bordered" AutoGenerateColumns="false">
                         <Columns>
+                            <asp:BoundField DataField="ExperimentID" HeaderText="ExpId" /> 
                             <asp:BoundField DataField="Title" HeaderText="Title" />
-                            <asp:BoundField DataField="Programme" HeaderText="Programme" />
-                            <asp:BoundField DataField="StudyYear" HeaderText="StudyYear" />
-                            <asp:BoundField DataField="CourseUnit" HeaderText="CourseUnit" />
                             <asp:BoundField DataField="ExperimentStatus" HeaderText="Status" />
                             <asp:TemplateField>
                                 <ItemTemplate>
