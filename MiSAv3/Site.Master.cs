@@ -72,7 +72,6 @@ namespace MiSAv3
             if (HttpContext.Current.User.IsInRole("Administrator"))
             {
                 adminLink.Visible = true;
-                AdminLowLink.Visible = true;
             }
         }
 
