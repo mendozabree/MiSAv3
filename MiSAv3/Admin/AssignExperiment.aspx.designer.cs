@@ -10,16 +10,88 @@
 namespace MiSAv3.Admin {
     
     
-    public partial class AdminHome {
+    public partial class AssignExperiment {
         
         /// <summary>
-        /// ExperimentsGridView control.
+        /// AssignmentDetailsPanel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel ExperimentsGridView;
+        protected global::System.Web.UI.WebControls.Panel AssignmentDetailsPanel;
+        
+        /// <summary>
+        /// hfAssignmentID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField hfAssignmentID;
+        
+        /// <summary>
+        /// ExperimentIDTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox ExperimentIDTextBox;
+        
+        /// <summary>
+        /// UniversityTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox UniversityTextBox;
+        
+        /// <summary>
+        /// CourseTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox CourseTextBox;
+        
+        /// <summary>
+        /// YearTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox YearTextBox;
+        
+        /// <summary>
+        /// CourseUnitTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox CourseUnitTextBox;
+        
+        /// <summary>
+        /// AssignButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button AssignButton;
+        
+        /// <summary>
+        /// AssignmentsGridView control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel AssignmentsGridView;
         
         /// <summary>
         /// gv control.
@@ -31,93 +103,12 @@ namespace MiSAv3.Admin {
         protected global::System.Web.UI.WebControls.GridView gv;
         
         /// <summary>
-        /// NewExperiment control.
+        /// NewAssignmentButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button NewExperiment;
-        
-        /// <summary>
-        /// ExperimemtDetailsPanel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel ExperimemtDetailsPanel;
-        
-        /// <summary>
-        /// hfExperimentID control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hfExperimentID;
-        
-        /// <summary>
-        /// ExperimentTitleTextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ExperimentTitleTextBox;
-        
-        /// <summary>
-        /// ManualTextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ManualTextBox;
-        
-        /// <summary>
-        /// ContactEmailTextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ContactEmailTextBox;
-        
-        /// <summary>
-        /// LabLinkTextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox LabLinkTextBox;
-        
-        /// <summary>
-        /// ExperimentStatus control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ExperimentStatus;
-        
-        /// <summary>
-        /// SaveBtn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button SaveBtn;
-        
-        /// <summary>
-        /// DeleteBtn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button DeleteBtn;
+        protected global::System.Web.UI.WebControls.Button NewAssignmentButton;
     }
 }

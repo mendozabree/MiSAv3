@@ -170,7 +170,7 @@
     <Content Include="Account\ResetPassword.aspx" />
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Admin\AdminHome.aspx" />
-    <Content Include="Admin\SetUpExperiment.aspx" />
+    <Content Include="Admin\AssignExperiment.aspx" />
     <Content Include="App_Data\aspnet-MiSAv3-old.mdf" />
     <Content Include="App_Data\aspnet-MiSAv3-old_log.ldf">
       <DependentUpon>aspnet-MiSAv3-old.mdf</DependentUpon>
@@ -393,12 +393,12 @@
     <Compile Include="Admin\AdminHome.aspx.designer.cs">
       <DependentUpon>AdminHome.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\SetUpExperiment.aspx.cs">
-      <DependentUpon>SetUpExperiment.aspx</DependentUpon>
+    <Compile Include="Admin\AssignExperiment.aspx.cs">
+      <DependentUpon>AssignExperiment.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\SetUpExperiment.aspx.designer.cs">
-      <DependentUpon>SetUpExperiment.aspx</DependentUpon>
+    <Compile Include="Admin\AssignExperiment.aspx.designer.cs">
+      <DependentUpon>AssignExperiment.aspx</DependentUpon>
     </Compile>
     <Content Include="App_Code\Modal.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />

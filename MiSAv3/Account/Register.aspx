@@ -27,14 +27,6 @@
             </div>
         </div>
         <div class="form-group">
-            <asp:Label runat="server" AssociatedControlID="UserName" CssClass="col-md-2 control-label">User Name:</asp:Label>
-            <div class="col-md-10">
-                <asp:TextBox runat="server" ID="UserName" CssClass="form-control" />
-                <asp:RequiredFieldValidator runat="server" ControlToValidate="UserName"
-                    CssClass="text-danger" ErrorMessage="The User Name field is required." />
-            </div>
-        </div>-->
-        <div class="form-group">
             <asp:Label runat="server" AssociatedControlID="Email" CssClass="col-md-2 control-label">Email</asp:Label>
             <div class="col-md-10">
                 <asp:TextBox runat="server" ID="Email" CssClass="form-control" TextMode="Email" />

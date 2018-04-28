@@ -8,14 +8,11 @@
     </style>
     <div class="jumbotron container-fluid">
         <div class="row">
-            <div class="col-sm-9">
+            <div class="col-sm-8">
                 <img src="Images/Halfwave.png" />
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-4">
                 <h3>Experiments at your finger tips!</h3>
-                <ul>
-                    <li><a id="href">ref</a></li>
-                </ul>
             </div>
         </div>
     </div>
