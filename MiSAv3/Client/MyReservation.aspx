@@ -44,7 +44,7 @@
             ID="DayPilotNavigator1"
             runat="server" 
             ShowMonths="3"
-            SkiptMonth="3"
+            SkipMonths="3"
             ClientObjectName="dp_navigator"
         />
 
