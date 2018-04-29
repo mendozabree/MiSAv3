@@ -81,7 +81,7 @@
             <!--Lab Link-->
             <div class="row form-group">
                 <div class=" offset-2 col-sm-2">
-                    <asp:Label AssocaitedControlID="LabLinkTextBox" runat="server" Text="Lab Link"></asp:Label>
+                    <asp:Label AssociatedControlID="LabLinkTextBox" runat="server" Text="Lab Link"></asp:Label>
                 </div>
                 <div class="col-sm-4">
                     <asp:TextBox ID="LabLinkTextBox" runat="server" CssClass="form-control TextBox" />

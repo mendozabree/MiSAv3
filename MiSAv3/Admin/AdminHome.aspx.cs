@@ -89,9 +89,12 @@ namespace MiSAv3.Admin
             int experimentID = Convert.ToInt32((sender as LinkButton).CommandArgument);
             if (sqlCon.State == ConnectionState.Closed)
                 sqlCon.Open();
+            SqlCommand cmd = new SqlCommand("Delete from Assignment where ExperimentID = @ExperimentID ", sqlCon);
+            cmd.Parameters.AddWithValue("@ExperimentID", experimentID);
             SqlCommand sqlcmd = new SqlCommand("DeleteExperimentByID", sqlCon);
             sqlcmd.CommandType = CommandType.StoredProcedure;
             sqlcmd.Parameters.AddWithValue("@ExperimentID", experimentID);
+            cmd.ExecuteNonQuery();
             sqlcmd.ExecuteNonQuery();
             sqlCon.Close();
             ExperimemtDetailsPanel.Visible = false;

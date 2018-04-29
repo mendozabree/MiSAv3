@@ -17,30 +17,48 @@ namespace MiSAv3.Client
         SqlConnection sqlCon = new SqlConnection(ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString);
         protected void Page_Load(object sender, EventArgs e)
         {
-            FillTable();
 
         }
 
-        void FillTable()
-        {
-            if (sqlCon.State == ConnectionState.Closed)
-                sqlCon.Open();
-            DbCommand cmd = sqlCon.CreateCommand();
-            cmd.CommandText = "SELECT * FROM ExperimentDetails WHERE ExperimentStatus = 'Active'";
-
-            DbDataReader reader = cmd.ExecuteReader();
-            DataTable dtbl = new DataTable();
-            dtbl.Load(reader);
-            sqlCon.Close();
-            ExperimentsTable.DataSource = dtbl;
-            ExperimentsTable.DataBind();
-        }
+ 
 
         protected void Reserve_Click(object sender, EventArgs e)
         {
 
             ViewExperimentsPanel.Visible = false;
             
+        }
+
+        protected void ViewLabsButton_Click(object sender, EventArgs e)
+        {
+            AvailableLabsPanel.Visible = true;
+            LabsFilterPanel.Visible = false;
+
+            LabsFilter();
+        }
+
+        public void LabsFilter()
+        {
+            string university = Insititution.Text;
+            string course = Programme.Text;
+            string year = YearOfStudy.SelectedItem.Value;
+            string courseUnit = CourseUnitCode.Text;
+
+            if (sqlCon.State == ConnectionState.Closed)
+                sqlCon.Open();
+            SqlCommand cmd = new SqlCommand("LabsFilter", sqlCon);
+            cmd.CommandType = CommandType.StoredProcedure;
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            sda.SelectCommand.Parameters.AddWithValue("@University", university);
+            sda.SelectCommand.Parameters.AddWithValue("@Course", course);
+            sda.SelectCommand.Parameters.AddWithValue("@YearOfStudy", year);
+            sda.SelectCommand.Parameters.AddWithValue("@CourseUnit", courseUnit);
+            DataTable dtbl = new DataTable();
+            sda.Fill(dtbl);
+            sqlCon.Close();
+
+            Experimentsgv.DataSource = dtbl;
+            Experimentsgv.DataBind();
         }
     }
 }
