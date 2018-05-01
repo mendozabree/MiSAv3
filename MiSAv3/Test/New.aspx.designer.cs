@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MiSAv3.Client {
+namespace MiSAv3.Test {
     
     
-    public partial class New {
+    public partial class Duty {
         
         /// <summary>
         /// form1 control.
@@ -40,13 +40,22 @@ namespace MiSAv3.Client {
         protected global::System.Web.UI.WebControls.TextBox TextBoxEnd;
         
         /// <summary>
-        /// Name control.
+        /// TextBoxName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Name;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxName;
+        
+        /// <summary>
+        /// ExpId control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox ExpId;
         
         /// <summary>
         /// ButtonOK control.

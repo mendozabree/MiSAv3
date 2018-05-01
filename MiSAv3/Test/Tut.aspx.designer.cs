@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MiSAv3.Client {
+namespace MiSAv3.Test {
     
     
-    public partial class MyReservation {
+    public partial class Tut {
         
         /// <summary>
         /// DayPilotNavigator1 control.

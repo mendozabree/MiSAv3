@@ -32,7 +32,7 @@ namespace MiSAv3.Client
         protected void ViewLabsButton_Click(object sender, EventArgs e)
         {
             AvailableLabsPanel.Visible = true;
-            LabsFilterPanel.Visible = false;
+            LabsFilterPanel.Visible = true;
 
             LabsFilter();
         }
@@ -60,5 +60,18 @@ namespace MiSAv3.Client
             Experimentsgv.DataSource = dtbl;
             Experimentsgv.DataBind();
         }
+
+        protected void Reservelink_Click(object sender, EventArgs e)
+        {
+            int currentExperiment = Convert.ToInt32((sender as LinkButton).CommandArgument);
+            Session["epid"] = currentExperiment.ToString();
+            Server.Transfer("MakeReservation.aspx");
+        }
+
+        protected void New_Click(object sender, EventArgs e)
+        {
+        }
+
+
     }
 }

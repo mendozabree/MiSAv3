@@ -10,7 +10,7 @@
 namespace MiSAv3.Client {
     
     
-    public partial class ClientReservations {
+    public partial class MakeReservation {
         
         /// <summary>
         /// CurrentReservations control.
@@ -20,5 +20,32 @@ namespace MiSAv3.Client {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView CurrentReservations;
+        
+        /// <summary>
+        /// Link control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView Link;
+        
+        /// <summary>
+        /// expID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox expID;
+        
+        /// <summary>
+        /// LinkTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox LinkTextBox;
     }
 }

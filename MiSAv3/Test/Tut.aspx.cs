@@ -1,24 +1,15 @@
-﻿using System;
+﻿using DayPilot.Web.Ui.Events;
+using System;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using DayPilot.Utils;
-using DayPilot.Web.Ui;
-using DayPilot.Web.Ui.Data;
-using DayPilot.Web.Ui.Enums;
-using DayPilot.Web.Ui.Events;
 
-using System.Web.UI.WebControls;
-
-namespace MiSAv3.Client
+namespace MiSAv3.Test
 {
-    public partial class MyReservation : System.Web.UI.Page
+    public partial class Tut : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
-
             if (!IsPostBack)
             {
                 DayPilotCalendarDay.DataSource = GetData(DayPilotCalendarDay.StartDate, DayPilotCalendarDay.EndDate.AddDays(1));
@@ -27,9 +18,8 @@ namespace MiSAv3.Client
 
         }
 
-        protected void DayPilotCalendarDay_Command(object sender, DayPilot.Web.Ui.Events.CommandEventArgs e)
+        protected void DayPilotCalendarDay_Command(object sender, CommandEventArgs e)
         {
-
             switch (e.Command)
             {
                 case "navigate":
@@ -46,7 +36,7 @@ namespace MiSAv3.Client
             }
         }
 
-        protected void DayPilotCalendarWeek_Command(object sender, DayPilot.Web.Ui.Events.CommandEventArgs e)
+        protected void DayPilotCalendarWeek_Command(object sender, CommandEventArgs e)
         {
             switch (e.Command)
             {
@@ -64,7 +54,7 @@ namespace MiSAv3.Client
             }
         }
 
-        protected void DayPilotMonth1_Command(object sender, DayPilot.Web.Ui.Events.CommandEventArgs e)
+        protected void DayPilotMonth1_Command(object sender, CommandEventArgs e)
         {
             switch (e.Command)
             {
@@ -94,9 +84,5 @@ namespace MiSAv3.Client
 
             return dt;
         }
-
-
-
-
     }
 }
