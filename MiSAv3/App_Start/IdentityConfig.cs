@@ -82,6 +82,8 @@ namespace MiSAv3
             }
             return manager;
         }
+
+
     }
 
     public class ApplicationSignInManager : SignInManager<ApplicationUser, string>

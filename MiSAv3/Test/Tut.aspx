@@ -1,4 +1,5 @@
-﻿<%@ Page Title="Reservation" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="MyReservation.aspx.cs" Inherits="MiSAv3.Client.MyReservation" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Tut.aspx.cs" Inherits="MiSAv3.Test.Tut" %>
+
 <%@ Register Assembly="DayPilot" Namespace="DayPilot.Web.Ui" TagPrefix="DayPilot" %>
 <asp:Content ID="Head" runat="server" ContentPlaceHolderID="Head">
     <script type="text/javascript" src="../Scripts/modal.js"></script>
@@ -135,3 +136,4 @@
 </script>
 
 </asp:Content>
+

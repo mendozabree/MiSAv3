@@ -175,10 +175,12 @@
     <Content Include="App_Data\aspnet-MiSAv3-old_log.ldf">
       <DependentUpon>aspnet-MiSAv3-old.mdf</DependentUpon>
     </Content>
+    <Content Include="App_Data\daypilot.mdf" />
+    <Content Include="App_Data\daypilot_log.ldf">
+      <DependentUpon>daypilot.mdf</DependentUpon>
+    </Content>
     <Content Include="Client\MakeReservation.aspx" />
     <Content Include="Client\MyLabs.aspx" />
-    <Content Include="Client\MyReservation.aspx" />
-    <Content Include="Client\New.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -243,6 +245,8 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
+    <Content Include="Test\New.aspx" />
+    <Content Include="Test\Tut.aspx" />
     <Content Include="Themes\areas.css" />
     <Content Include="Themes\areas\icons.png" />
     <Content Include="Themes\bubble_default.css" />
@@ -412,6 +416,7 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Client\Experiment.cs" />
     <Compile Include="Client\MakeReservation.aspx.cs">
       <DependentUpon>MakeReservation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -419,27 +424,12 @@
     <Compile Include="Client\MakeReservation.aspx.designer.cs">
       <DependentUpon>MakeReservation.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Client\Modal.cs" />
     <Compile Include="Client\MyLabs.aspx.cs">
       <DependentUpon>MyLabs.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Client\MyLabs.aspx.designer.cs">
       <DependentUpon>MyLabs.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Client\MyReservation.aspx.cs">
-      <DependentUpon>MyReservation.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Client\MyReservation.aspx.designer.cs">
-      <DependentUpon>MyReservation.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Client\New.aspx.cs">
-      <DependentUpon>New.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Client\New.aspx.designer.cs">
-      <DependentUpon>New.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -458,6 +448,14 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Test\New.aspx.cs">
+      <DependentUpon>New.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test\New.aspx.designer.cs">
+      <DependentUpon>New.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test\Modal.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Roles\RoleAction.cs" />
@@ -476,6 +474,13 @@
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
+    <Compile Include="Test\Tut.aspx.cs">
+      <DependentUpon>Tut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test\Tut.aspx.designer.cs">
+      <DependentUpon>Tut.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -10,51 +10,60 @@
 namespace MiSAv3.Client {
     
     
-    public partial class MyReservation {
+    public partial class New {
         
         /// <summary>
-        /// DayPilotNavigator1 control.
+        /// Name control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DayPilot.Web.Ui.DayPilotNavigator DayPilotNavigator1;
+        protected global::System.Web.UI.WebControls.Label Name;
         
         /// <summary>
-        /// DayPilotCalendarDay control.
+        /// TextBoxStart control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DayPilot.Web.Ui.DayPilotCalendar DayPilotCalendarDay;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxStart;
         
         /// <summary>
-        /// DayPilotCalendarWeek control.
+        /// TextBoxEnd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DayPilot.Web.Ui.DayPilotCalendar DayPilotCalendarWeek;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxEnd;
         
         /// <summary>
-        /// DayPilotMonth1 control.
+        /// ExperimentID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DayPilot.Web.Ui.DayPilotMonth DayPilotMonth1;
+        protected global::System.Web.UI.WebControls.TextBox ExperimentID;
         
         /// <summary>
-        /// ExperimentLabel control.
+        /// ButtonOK control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label ExperimentLabel;
+        protected global::System.Web.UI.WebControls.Button ButtonOK;
+        
+        /// <summary>
+        /// ButtonCancel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonCancel;
     }
 }
