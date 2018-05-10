@@ -5,28 +5,16 @@
         <br />
         <div class="row">
             <div class="col-12">
-                <asp:GridView ID="CurrentReservations" runat="server" CssClass="table table-striped table-bordered table-responsive" AutoGenerateColumns="false">
+                <asp:GridView ID="CurrentReservations" runat="server" CssClass="table table-striped table-bordered table-responsive" 
+                    AutoGenerateColumns="false" OnDataBound="CurrentReservations_DataBound">
                     <Columns>
                         <asp:BoundField DataField="eventstart" HeaderText="Start" />
                         <asp:BoundField DataField="eventend" HeaderText="End" />
-                        <asp:BoundField DataField="ExperimentID" HeaderText="ExpID" />
+                        <asp:BoundField DataField="ExperimentID" HeaderText="ExpID" Visible="false"/>
                         <asp:TemplateField>
                             <ItemTemplate>
-                                <asp:Button ID="Launch" runat="server"  Text="Launch" />
-                            </ItemTemplate>
-                        </asp:TemplateField>
-                    </Columns>
-                </asp:GridView>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <asp:GridView ID="Link" runat="server" CssClass="table table-striped table-bordered table-responsive" AutoGenerateColumns="false">
-                    <Columns>
-                        <asp:BoundField DataField="LabLink" HeaderText="Link" />
-                        <asp:TemplateField>
-                            <ItemTemplate>
-                                <asp:Button ID="Launch" runat="server" CommandArgument='<%# Eval("LabLink") %>' Text="Launch" OnClick="Launch_Click"/>
+                                    <asp:LinkButton ID="Startlink" runat="server" CommandArgument='<%# Eval("eventstart") %>'
+                                        OnClick="Startlink_Click">Reserve</asp:LinkButton>
                             </ItemTemplate>
                         </asp:TemplateField>
                     </Columns>
@@ -35,9 +23,12 @@
         </div>
         <div class="row">
             <div class="offset-2 col-sm-2">
-                <a class="nav-link" href="../Test/Tut.aspx">New Reservation</a>
-                <asp:TextBox ID="expID" runat="server"/>
-                <asp:TextBox ID="LinkTextBox" runat="server" />
+                <asp:HyperLink ID="NewReservation" NavigateUrl="~/Reservation/Reserve.aspx" Visible="false" runat="server" Text="New Reservation"/>
+                <asp:Button ID="Launch" runat="server" Text="Launch Lab" OnClick="Launch_Click" Visible="false" CssClass="btn btn-success"/>
+                <asp:TextBox ID="LinkTextBox" runat="server" Visible="false"/>
+                <asp:TextBox ID="expID" runat="server" Visible="false"/>
+                <asp:TextBox ID="Time" runat="server"/>
+                <asp:TextBox ID="Time1" runat="server"/>
             </div>
         </div>
     </div>

@@ -7,72 +7,54 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MiSAv3.Client {
+namespace MiSAv3.Reservation {
     
     
-    public partial class MakeReservation {
+    public partial class Reserve {
         
         /// <summary>
-        /// CurrentReservations control.
+        /// DayPilotNavigator1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView CurrentReservations;
+        protected global::DayPilot.Web.Ui.DayPilotNavigator DayPilotNavigator1;
         
         /// <summary>
-        /// NewReservation control.
+        /// DayPilotCalendarDay control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink NewReservation;
+        protected global::DayPilot.Web.Ui.DayPilotCalendar DayPilotCalendarDay;
         
         /// <summary>
-        /// Launch control.
+        /// DayPilotCalendarWeek control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Launch;
+        protected global::DayPilot.Web.Ui.DayPilotCalendar DayPilotCalendarWeek;
         
         /// <summary>
-        /// LinkTextBox control.
+        /// DayPilotMonth1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox LinkTextBox;
+        protected global::DayPilot.Web.Ui.DayPilotMonth DayPilotMonth1;
         
         /// <summary>
-        /// expID control.
+        /// ExperimentLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox expID;
-        
-        /// <summary>
-        /// Time control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Time;
-        
-        /// <summary>
-        /// Time1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Time1;
+        protected global::System.Web.UI.WebControls.Label ExperimentLabel;
     }
 }

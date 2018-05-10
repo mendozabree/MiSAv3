@@ -10,7 +10,7 @@
                     <asp:Label runat="server" AssociatedControlID="Insititution" Text="University" CssClass="control-label"/>
                 </div>
                 <div class="col-sm-4">
-                    <asp:TextBox ID="Insititution" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="Insititution" runat="server" CssClass="form-control"/>
                     <asp:RequiredFieldValidator runat="server" ControlToValidate="Insititution"
                         CssClass="text-danger" ErrorMessage="Insititution is required." />
                 </div>
@@ -83,6 +83,9 @@
                 </div>
             </div>
         </asp:Panel>
+        <div>
+            <asp:Label ID="startTime" runat="server" Visible="false"/>
+        </div>
     </div>
 </asp:Panel>
 

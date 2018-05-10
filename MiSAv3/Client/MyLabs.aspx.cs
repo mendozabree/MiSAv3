@@ -55,7 +55,6 @@ namespace MiSAv3.Client
             sda.SelectCommand.Parameters.AddWithValue("@CourseUnit", courseUnit);
             DataTable dtbl = new DataTable();
             sda.Fill(dtbl);
-            sqlCon.Close();
 
             Experimentsgv.DataSource = dtbl;
             Experimentsgv.DataBind();
@@ -65,7 +64,7 @@ namespace MiSAv3.Client
         {
             int currentExperiment = Convert.ToInt32((sender as LinkButton).CommandArgument);
             Session["epid"] = currentExperiment.ToString();
-            Server.Transfer("MakeReservation.aspx");
+            Response.Redirect("MakeReservation.aspx");
         }
 
         protected void New_Click(object sender, EventArgs e)

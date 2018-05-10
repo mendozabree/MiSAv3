@@ -7,72 +7,72 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MiSAv3.Client {
+namespace MiSAv3.Reservation {
     
     
-    public partial class MakeReservation {
+    public partial class New {
         
         /// <summary>
-        /// CurrentReservations control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView CurrentReservations;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// NewReservation control.
+        /// TextBoxStart control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink NewReservation;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxStart;
         
         /// <summary>
-        /// Launch control.
+        /// TextBoxEnd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Launch;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxEnd;
         
         /// <summary>
-        /// LinkTextBox control.
+        /// TextBoxName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox LinkTextBox;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxName;
         
         /// <summary>
-        /// expID control.
+        /// ExpId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox expID;
+        protected global::System.Web.UI.WebControls.TextBox ExpId;
         
         /// <summary>
-        /// Time control.
+        /// ButtonOK control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Time;
+        protected global::System.Web.UI.WebControls.Button ButtonOK;
         
         /// <summary>
-        /// Time1 control.
+        /// ButtonCancel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Time1;
+        protected global::System.Web.UI.WebControls.Button ButtonCancel;
     }
 }
